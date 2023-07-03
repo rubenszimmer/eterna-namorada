@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rochester&family=Sofia&display=swap');
+
+/*Raíz da árvore do documento, ou variáveis globais que servirão para TODO o documento. Todas as variáveis em CSS, iniciam com dois traços --*/
+:root {
+    --cor0: #e7c6c6;
+    --cor1: #DB382C;
+    --cor2: #A82A21;
+    --cor3: #5C1712;
+    --cor4: #5C312E;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque01: 'Rochester', cursive;
+    --fonte-destaque02: 'Sofia', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;    
+}
+
+body {    
+    font-family: var(--fonte-destaque02);
+    background-color: var(--cor1);        
+     
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 70px;  /*Recuo no começo dos parágrafos*/
+    line-height: 1.5em; /*Espaçamento entre as linhas do parágrafo*/
+    font-size: 1.2em; 
+}
+
+header {
+    padding-top: 25px;
+    min-height: 150px;  /*Altura mínima do cabeçalho(header)*/
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    background-color: var(--cor3);
+    color: var(--cor0);
+    font-family: var(--fonte-destaque02);
+    text-align: center;
+    box-shadow: 5px 5px 45px #fff1333a;
+}
+
+header h1 {
+    color: var(--cor0);
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-shadow: 4px 4px 6px #a8625d5b
+}
+
+header p {
+    color: var(--cor1);
+    font-size: 1.4em;    
+    text-shadow: 5px 5px 6px #a8625d9d;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0px; /*Cola o topo de nav com o padding de h1*/
+}
+
+nav {
+    background-color: var(--cor3);
+    font-size: 1.2em;    
+    padding: 12px;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(91, 91, 207, 0.603);
+}
+
+nav a {
+    padding: 10px;  /*Afastamento de um link para o outro*/    
+    text-decoration: none;  
+    border-radius: 5px;  
+}
+
+nav a:hover {
+    background-color: var(--cor1);
+    
+}
+
+main {
+    font-family: var(--fonte-destaque02);
+    background-color: var(--cor0);
+    color: var(--cor3);
+    min-width: 300px;
+    max-width: 1000px;    
+    margin: auto;  /*Adapta para telas grandes como televisões*/
+    margin-bottom: 30px;
+    padding: 10px; /*Padding de 10px para afastar o texto das laterais direita e esquerda.*/
+    box-shadow: 5px 5px 25px rgba(14, 1, 1, 0.527);
+    border-radius: 0px 0px  25px 25px;
+}
+
+main img {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+main > article > img {
+    box-shadow: 5px 5px 25px #5C1712;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+article > h3 {
+    text-align: center;
+    color: var(--cor1);
+}
+
+article > h2 {
+    color: var(--cor1);
+}
+
+article > iframe {
+    box-shadow: 5px 5px 25px #5C312E;
+}
+
+footer {
+    background-color: var(--cor3);
+    color: #e7ada8;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: var(--fonte-destaque02);
+    font-size: 1.4em;
+    text-align: center;
+}
+
